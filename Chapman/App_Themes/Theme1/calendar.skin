@@ -1,0 +1,38 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<asp:Calendar runat="server" SkinID="MyCalendarSkin"
+BackColor="LightBlue" ForeColor="Black" BorderColor="Black"
+CellSpacing="1" NextPrevFormat="ShortMonth" ShowGridLines="True"
+BorderStyle="Solid" Height="500px" Width="500px" Font-Size ="14 pt"
+Font-Bold="True">
+<DayHeaderStyle BackColor="OldLace" ForeColor="Black"/>
+<SelectedDayStyle BackColor="LightCoral"/>
+<TitleStyle BackColor="SeaShell" ForeColor="Black" Font-Size="18 pt"/>
+<OtherMonthDayStyle BackColor="LightSteelBlue" ForeColor="LightGray" Font-Bold="False"/>
+</asp:Calendar>
+
+<asp:Calendar runat="server"
+BackColor="LightGray" ForeColor="Black" BorderColor="Black"
+CellSpacing="1" NextPrevFormat="ShortMonth" ShowGridLines="True"
+BorderStyle="Dashed" Height="500px" Width="500px" Font-Size ="14 pt"
+Font-Bold="True">
+<NextPrevStyle ForeColor="White"/>
+<DayHeaderStyle BackColor="Gray" ForeColor="Black"/>
+<SelectedDayStyle BackColor="FireBrick"/>
+<TitleStyle BackColor="Black" ForeColor="White" Font-Size="18 pt"/>
+<OtherMonthDayStyle BackColor="LightGray" ForeColor="LightGray" Font-Bold="False"/>
+</asp:Calendar>
